@@ -1,0 +1,129 @@
+@relation kd100-weka.filters.unsupervised.attribute.NumericCleaner-min1.0-min-defaultNaN-max1.7976931348623157E308-max-default1.7976931348623157E308-closeto0.0-closeto-default0.0-closeto-tolerance1.0E-6-Rfirst-last-decimals-1
+
+@attribute Geschlecht {w,m}
+@attribute Alter {>60,18-30,41-50,51-60,31-40}
+@attribute Kinder {nein,ja}
+@attribute Familienstand {ledig,Partnerschaft}
+@attribute Berufstaetig {nein,ja}
+@attribute Einkaufstag {Montag,Samstag,Donnerstag,Mittwoch,Freitag,Dienstag}
+@attribute Einkaufsuhrzeit {'<10 Uhr','10-12 Uhr','>17 Uhr','12-14 Uhr','14-17 Uhr'}
+@attribute Wohnort {'< 10 km','> 25 km','10 - 25 km'}
+@attribute Haushaltsnettoeinkommen {<1000,1000-<2000,3200-<4500,>4500,2000-<3200}
+@attribute Einkaufssumme numeric
+@attribute Fertiggerichte numeric
+@attribute Tiefkuehlware numeric
+@attribute Milchprodukte numeric
+@attribute Backwaren numeric
+@attribute Obst/Gemuese numeric
+@attribute Spirituosen numeric
+@attribute Tiernahrung numeric
+@attribute Bier numeric
+@attribute Frischfleisch numeric
+@attribute Drogerieartikel numeric
+@attribute Konserven numeric
+@attribute Kaffee/Tee numeric
+@attribute Suessigkeiten numeric
+@attribute Wurstwaren numeric
+@attribute Schreibwaren numeric
+
+@data
+w,>60,nein,ledig,nein,Montag,'<10 Uhr','< 10 km',<1000,311,?,?,?,69,?,10,213,?,?,?,12,7,?,?,?
+m,18-30,nein,ledig,nein,Samstag,'<10 Uhr','> 25 km',1000-<2000,293,?,?,?,?,?,11,36,14,24,?,13,?,6,189,?
+w,>60,nein,ledig,nein,Samstag,'<10 Uhr','10 - 25 km',3200-<4500,237,?,?,?,28,88,13,62,?,?,?,?,16,8,?,22
+m,18-30,nein,ledig,ja,Samstag,'10-12 Uhr','10 - 25 km',1000-<2000,39,8,?,?,?,?,17,?,7,?,?,2,?,5,?,?
+w,18-30,nein,ledig,ja,Donnerstag,'10-12 Uhr','< 10 km',1000-<2000,138,?,?,?,?,?,?,?,138,?,?,?,?,?,?,?
+m,18-30,ja,ledig,ja,Samstag,'>17 Uhr','10 - 25 km',1000-<2000,180,2,?,?,9,6,19,?,48,12,?,14,70,?,?,?
+w,18-30,nein,ledig,nein,Montag,'12-14 Uhr','10 - 25 km',1000-<2000,122,?,?,15,?,?,?,60,39,?,?,?,?,8,?,?
+m,>60,nein,Partnerschaft,nein,Mittwoch,'10-12 Uhr','< 10 km',1000-<2000,92,12,?,?,?,?,?,?,?,?,?,10,?,70,?,?
+m,>60,nein,ledig,nein,Samstag,'14-17 Uhr','10 - 25 km',>4500,229,2,?,3,?,?,?,63,?,?,?,8,?,?,153,?
+w,>60,nein,ledig,nein,Samstag,'10-12 Uhr','< 10 km',3200-<4500,191,?,?,?,15,?,18,19,?,?,?,4,63,72,?,?
+m,41-50,ja,Partnerschaft,ja,Samstag,'>17 Uhr','< 10 km',1000-<2000,276,9,?,4,?,?,?,?,63,124,?,16,?,?,?,60
+w,>60,nein,ledig,nein,Donnerstag,'<10 Uhr','10 - 25 km',1000-<2000,136,?,?,?,7,?,27,7,20,?,?,?,11,?,64,?
+m,>60,nein,ledig,nein,Samstag,'<10 Uhr','10 - 25 km',1000-<2000,74,35,?,6,?,?,?,?,?,?,25,8,?,?,?,?
+m,18-30,ja,ledig,nein,Samstag,'10-12 Uhr','< 10 km',3200-<4500,277,7,4,?,?,?,7,?,248,4,?,7,?,?,?,?
+w,51-60,ja,ledig,nein,Freitag,'>17 Uhr','10 - 25 km',3200-<4500,108,?,?,?,11,?,12,77,?,?,?,?,8,?,?,?
+w,>60,nein,ledig,nein,Samstag,'<10 Uhr','< 10 km',<1000,96,?,?,?,19,?,5,4,32,21,?,?,15,?,?,?
+w,41-50,nein,ledig,nein,Donnerstag,'10-12 Uhr','> 25 km',1000-<2000,484,?,42,?,?,?,140,108,126,68,?,?,?,?,?,?
+m,41-50,nein,ledig,ja,Samstag,'14-17 Uhr','10 - 25 km',<1000,147,3,?,30,?,?,?,?,?,?,7,5,36,66,?,?
+m,18-30,ja,ledig,nein,Mittwoch,'10-12 Uhr','> 25 km',<1000,444,21,?,?,?,?,6,70,192,88,?,13,?,?,54,?
+m,18-30,ja,ledig,ja,Samstag,'10-12 Uhr','< 10 km',1000-<2000,205,1,?,?,40,24,21,?,101,9,?,9,?,?,?,?
+m,18-30,nein,ledig,nein,Samstag,'<10 Uhr','< 10 km',1000-<2000,279,12,?,?,?,?,18,?,13,233,?,3,?,?,?,?
+w,41-50,nein,ledig,nein,Samstag,'>17 Uhr','> 25 km',<1000,101,?,?,?,24,?,?,45,?,32,?,?,?,?,?,?
+w,18-30,ja,ledig,ja,Samstag,'<10 Uhr','10 - 25 km',3200-<4500,6,6,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+w,41-50,ja,ledig,ja,Mittwoch,'10-12 Uhr','10 - 25 km',1000-<2000,391,24,66,?,?,?,?,?,234,?,?,?,?,?,3,64
+w,>60,nein,ledig,nein,Donnerstag,'<10 Uhr','10 - 25 km',2000-<3200,322,?,48,?,41,?,5,99,?,?,?,?,?,75,?,54
+w,>60,ja,Partnerschaft,ja,Montag,'10-12 Uhr','10 - 25 km',3200-<4500,149,?,?,?,7,?,49,14,?,?,?,?,65,14,?,?
+w,>60,ja,ledig,nein,Samstag,'14-17 Uhr','< 10 km',3200-<4500,123,?,?,?,11,?,8,89,?,?,?,?,15,?,?,?
+m,18-30,nein,ledig,ja,Samstag,'14-17 Uhr','10 - 25 km',1000-<2000,200,42,?,?,10,?,21,?,13,8,12,10,?,84,?,?
+w,51-60,nein,ledig,nein,Mittwoch,'10-12 Uhr','< 10 km',<1000,24,?,?,?,4,?,5,11,?,?,?,?,4,?,?,?
+m,>60,nein,Partnerschaft,nein,Samstag,'<10 Uhr','10 - 25 km',>4500,133,8,10,?,?,?,?,?,?,?,?,5,?,72,?,38
+w,41-50,ja,Partnerschaft,ja,Dienstag,'>17 Uhr','< 10 km',1000-<2000,84,?,?,14,?,?,?,?,?,?,?,?,?,70,?,?
+w,18-30,nein,ledig,ja,Freitag,'>17 Uhr','10 - 25 km',<1000,315,10,?,?,?,25,?,72,?,208,?,?,?,?,?,?
+m,18-30,nein,Partnerschaft,ja,Samstag,'14-17 Uhr','10 - 25 km',<1000,165,1,?,?,?,54,?,?,6,7,?,9,88,?,?,?
+m,51-60,nein,ledig,ja,Samstag,'10-12 Uhr','< 10 km',3200-<4500,151,5,30,?,?,?,?,?,?,104,?,12,?,?,?,?
+w,18-30,nein,ledig,nein,Montag,'>17 Uhr','< 10 km',<1000,298,?,?,?,16,?,?,72,210,?,?,?,?,?,?,?
+m,>60,nein,ledig,nein,Samstag,'10-12 Uhr','> 25 km',1000-<2000,100,2,?,?,?,?,?,?,?,7,?,3,?,88,?,?
+m,>60,ja,ledig,ja,Samstag,'12-14 Uhr','10 - 25 km',1000-<2000,219,12,?,?,?,?,?,26,22,?,?,11,80,?,68,?
+m,18-30,nein,ledig,nein,Samstag,'14-17 Uhr','< 10 km',>4500,325,1,?,?,?,28,20,55,19,133,?,18,16,?,?,35
+m,51-60,nein,ledig,ja,Samstag,'<10 Uhr','< 10 km',3200-<4500,139,1,?,?,49,?,?,24,?,?,?,10,?,48,?,7
+m,18-30,ja,ledig,ja,Samstag,'>17 Uhr','10 - 25 km',3200-<4500,192,5,?,?,?,?,6,?,7,163,?,11,?,?,?,?
+m,18-30,ja,ledig,ja,Samstag,'10-12 Uhr','< 10 km',<1000,253,3,?,?,?,?,2,108,?,18,?,8,?,?,84,30
+w,41-50,nein,ledig,nein,Samstag,'10-12 Uhr','< 10 km',<1000,245,4,?,?,?,?,?,40,153,?,?,?,?,?,?,48
+m,18-30,ja,ledig,nein,Samstag,'10-12 Uhr','10 - 25 km',<1000,67,12,?,?,?,?,13,?,19,12,?,11,?,?,?,?
+m,>60,nein,Partnerschaft,nein,Samstag,'14-17 Uhr','10 - 25 km',2000-<3200,151,9,18,?,?,?,?,72,40,?,?,12,?,?,?,?
+w,>60,nein,ledig,nein,Freitag,'<10 Uhr','< 10 km',<1000,176,30,?,?,50,12,11,58,?,?,?,?,15,?,?,?
+w,>60,ja,ledig,nein,Samstag,'10-12 Uhr','< 10 km',1000-<2000,208,?,?,?,3,?,5,5,?,98,?,?,1,96,?,?
+m,18-30,nein,ledig,ja,Samstag,'>17 Uhr','< 10 km',<1000,118,5,?,?,?,?,17,?,14,11,?,3,?,?,68,?
+w,31-40,ja,ledig,nein,Donnerstag,'14-17 Uhr','< 10 km',1000-<2000,146,10,?,?,?,?,?,?,91,?,?,?,?,?,?,45
+m,18-30,nein,ledig,nein,Samstag,'10-12 Uhr','10 - 25 km',3200-<4500,341,54,56,?,56,56,18,?,51,19,18,1,?,12,?,?
+w,41-50,nein,ledig,nein,Montag,'>17 Uhr','10 - 25 km',3200-<4500,222,?,72,?,18,?,?,?,?,110,?,?,?,22,?,?
+m,>60,ja,ledig,ja,Samstag,'<10 Uhr','10 - 25 km',3200-<4500,173,5,?,?,12,?,?,?,?,144,?,12,?,?,?,?
+w,>60,nein,ledig,nein,Freitag,'<10 Uhr','< 10 km',2000-<3200,232,?,3,21,10,?,8,97,?,?,?,?,15,28,50,?
+w,18-30,ja,Partnerschaft,ja,Dienstag,'<10 Uhr','< 10 km',3200-<4500,33,?,24,?,4,?,?,?,?,?,?,?,?,5,?,?
+m,18-30,nein,Partnerschaft,ja,Samstag,'10-12 Uhr','10 - 25 km',2000-<3200,177,?,?,?,3,?,20,49,6,13,?,14,?,?,72,?
+w,41-50,ja,Partnerschaft,ja,Donnerstag,'>17 Uhr','< 10 km',1000-<2000,128,?,?,?,?,?,?,?,?,?,?,?,30,98,?,?
+m,>60,nein,Partnerschaft,nein,Samstag,'10-12 Uhr','> 25 km',2000-<3200,424,38,12,3,20,?,?,?,216,51,?,12,?,?,72,?
+w,18-30,nein,ledig,nein,Freitag,'>17 Uhr','> 25 km',2000-<3200,139,?,?,1,25,?,?,?,?,?,48,?,?,65,?,?
+m,31-40,nein,Partnerschaft,ja,Samstag,'10-12 Uhr','< 10 km',<1000,62,11,?,?,?,?,?,?,?,?,?,1,?,50,?,?
+m,18-30,nein,ledig,nein,Samstag,'>17 Uhr','10 - 25 km',1000-<2000,120,9,72,?,6,?,7,14,5,5,?,2,?,?,?,?
+m,31-40,ja,ledig,nein,Freitag,'10-12 Uhr','< 10 km',<1000,17,5,?,?,?,?,?,?,?,?,?,12,?,?,?,?
+w,31-40,nein,ledig,ja,Donnerstag,'<10 Uhr','< 10 km',2000-<3200,162,?,?,?,?,?,?,72,?,90,?,?,?,?,?,?
+m,18-30,nein,Partnerschaft,ja,Donnerstag,'<10 Uhr','< 10 km',2000-<3200,102,7,?,?,?,?,14,?,2,11,?,2,?,66,?,?
+w,18-30,ja,Partnerschaft,nein,Samstag,'>17 Uhr','< 10 km',1000-<2000,234,?,?,6,54,14,?,?,120,?,?,?,?,?,?,40
+w,>60,nein,ledig,nein,Donnerstag,'14-17 Uhr','< 10 km',3200-<4500,284,?,?,?,19,?,1,17,?,?,?,?,163,?,?,84
+m,18-30,nein,Partnerschaft,nein,Samstag,'14-17 Uhr','10 - 25 km',>4500,102,10,35,?,20,?,9,?,10,6,?,12,?,?,?,?
+m,18-30,ja,ledig,nein,Samstag,'>17 Uhr','< 10 km',<1000,45,13,?,?,?,18,9,?,1,?,?,4,?,?,?,?
+w,>60,nein,ledig,nein,Samstag,'10-12 Uhr','10 - 25 km',<1000,75,?,15,?,5,?,3,16,?,21,?,?,15,?,?,?
+w,>60,nein,ledig,nein,Samstag,'12-14 Uhr','< 10 km',1000-<2000,444,?,?,5,19,48,11,29,248,?,14,?,10,60,?,?
+m,>60,nein,ledig,nein,Samstag,'<10 Uhr','< 10 km',<1000,34,5,?,?,?,?,?,?,?,?,?,5,?,24,?,?
+w,18-30,nein,ledig,nein,Donnerstag,'>17 Uhr','10 - 25 km',>4500,105,?,?,?,?,20,?,?,?,15,?,?,?,70,?,?
+w,>60,nein,ledig,nein,Samstag,'<10 Uhr','< 10 km',2000-<3200,104,?,?,?,41,30,2,10,?,?,?,?,9,?,?,12
+w,>60,nein,ledig,nein,Samstag,'10-12 Uhr','< 10 km',>4500,25,?,?,?,9,?,3,3,?,?,?,?,10,?,?,?
+m,>60,ja,ledig,nein,Montag,'10-12 Uhr','10 - 25 km',2000-<3200,279,14,42,?,?,?,?,?,170,?,?,9,?,?,44,?
+w,51-60,ja,ledig,ja,Mittwoch,'12-14 Uhr','10 - 25 km',1000-<2000,204,?,70,?,8,?,12,28,?,?,?,?,19,11,?,56
+w,18-30,ja,ledig,nein,Montag,'<10 Uhr','10 - 25 km',1000-<2000,175,?,?,?,?,?,?,?,?,?,?,2,45,2,126,?
+m,>60,nein,ledig,nein,Samstag,'<10 Uhr','10 - 25 km',1000-<2000,72,12,?,?,?,?,?,?,?,?,?,9,?,51,?,?
+w,18-30,ja,ledig,ja,Samstag,'>17 Uhr','10 - 25 km',3200-<4500,97,?,?,?,?,?,?,?,?,?,?,?,?,72,15,10
+w,18-30,nein,ledig,ja,Mittwoch,'>17 Uhr','10 - 25 km',3200-<4500,95,?,?,20,?,?,?,?,18,?,18,?,39,?,?,?
+w,51-60,nein,ledig,nein,Donnerstag,'>17 Uhr','< 10 km',3200-<4500,171,28,?,?,32,?,13,7,?,?,?,?,79,12,?,?
+m,41-50,nein,Partnerschaft,nein,Samstag,'14-17 Uhr','10 - 25 km',3200-<4500,226,4,?,?,?,?,?,90,?,88,?,14,?,30,?,?
+w,51-60,ja,ledig,ja,Samstag,'>17 Uhr','10 - 25 km',3200-<4500,149,?,?,?,?,?,1,22,?,126,?,?,?,?,?,?
+w,18-30,nein,ledig,ja,Donnerstag,'>17 Uhr','< 10 km',2000-<3200,50,?,?,?,?,?,18,?,?,?,?,?,?,?,32,?
+w,18-30,nein,ledig,nein,Freitag,'12-14 Uhr','< 10 km',1000-<2000,209,?,?,?,12,?,?,119,78,?,?,?,?,?,?,?
+m,18-30,ja,ledig,nein,Samstag,'>17 Uhr','< 10 km',>4500,483,50,?,6,?,?,45,?,129,102,?,1,?,70,?,80
+w,41-50,nein,ledig,nein,Freitag,'>17 Uhr','< 10 km',1000-<2000,197,?,21,?,?,?,36,?,27,?,35,?,?,78,?,?
+m,18-30,ja,ledig,nein,Samstag,'>17 Uhr','< 10 km',1000-<2000,118,5,50,?,?,?,14,?,2,10,24,13,?,?,?,?
+w,18-30,nein,ledig,nein,Montag,'>17 Uhr','> 25 km',<1000,162,?,36,?,12,?,?,18,?,80,?,?,?,16,?,?
+m,41-50,nein,ledig,nein,Samstag,'<10 Uhr','< 10 km',1000-<2000,172,?,?,?,?,?,?,?,165,?,?,4,?,3,?,?
+m,51-60,nein,ledig,ja,Freitag,'<10 Uhr','10 - 25 km',3200-<4500,80,5,?,9,?,?,?,?,51,?,?,9,6,?,?,?
+w,18-30,nein,Partnerschaft,ja,Samstag,'>17 Uhr','> 25 km',3200-<4500,116,?,?,?,?,6,?,?,?,?,6,42,?,6,56,?
+m,18-30,nein,ledig,nein,Samstag,'14-17 Uhr','< 10 km',<1000,280,13,48,?,9,?,32,?,57,10,?,3,?,?,108,?
+w,18-30,ja,ledig,ja,Montag,'14-17 Uhr','10 - 25 km',1000-<2000,39,?,30,?,?,?,?,?,?,?,?,?,?,?,?,9
+w,>60,nein,ledig,nein,Samstag,'<10 Uhr','< 10 km',2000-<3200,168,12,?,?,11,?,?,49,?,?,?,?,96,?,?,?
+w,18-30,ja,Partnerschaft,nein,Donnerstag,'>17 Uhr','< 10 km',1000-<2000,265,?,?,?,?,4,?,?,?,?,48,?,119,64,?,30
+m,18-30,ja,ledig,ja,Samstag,'>17 Uhr','< 10 km',>4500,226,11,?,24,24,?,14,7,16,?,?,?,?,108,?,22
+m,>60,nein,ledig,nein,Dienstag,'<10 Uhr','10 - 25 km',<1000,91,35,9,?,?,?,?,?,28,?,15,4,?,?,?,?
+w,41-50,nein,ledig,nein,Donnerstag,'<10 Uhr','< 10 km',<1000,82,?,72,10,?,?,?,?,?,?,?,?,?,?,?,?
+m,>60,ja,ledig,nein,Donnerstag,'>17 Uhr','< 10 km',<1000,188,12,?,?,7,63,?,?,66,?,?,7,?,?,?,33
+m,18-30,nein,Partnerschaft,nein,Samstag,'<10 Uhr','> 25 km',3200-<4500,124,9,?,?,?,?,21,56,17,6,?,2,13,?,?,?
+m,>60,nein,ledig,nein,Samstag,'<10 Uhr','10 - 25 km',2000-<3200,14,?,?,?,?,?,?,?,?,?,?,14,?,?,?,?
